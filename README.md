@@ -1,11 +1,14 @@
 # DEAD-BODY-SQL-Scanner 🛡️
 
+<div align="center">
+
+| Language | Python | Version | 1.0.0 |
+| :--- | :--- | :--- | :--- |
+| **Author** | NZ NISHAN |
+
+</div>
+
 **Elite SQL Vulnerability Scanner** - A powerful, fast, and easy-to-use tool designed for ethical security testing and vulnerability assessment.
-
----
-
-### 👤 Developed By: NZ NISHAN
-*Instagram:* [@boycott_nishan](https://instagram.com/boycott_nishan)
 
 ---
 
@@ -19,15 +22,10 @@
 
 ## 🚀 Installation & Usage
 
-### Step 1: Clone the repository
-git clone https://github.com/dead-body-16/DEAD-BODY-SQL-Scanner.git
-
+```bash
+git clone [https://github.com/dead-body-16/DEAD-BODY-SQL-Scanner.git](https://github.com/dead-body-16/DEAD-BODY-SQL-Scanner.git)
 cd DEAD-BODY-SQL-Scanner
-
-### Step 2: Install dependencies
 pip install requests
-
-### Step 3: Run the tool
 python3 sql_pro.py
 
 ---

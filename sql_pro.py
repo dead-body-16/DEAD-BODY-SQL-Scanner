@@ -14,25 +14,7 @@ BOLD = '\033[1m'
 def clear():
     os.system('clear' if os.name == 'posix' else 'cls')
 
-def type_effect(text, speed=0.03):
-    for char in text:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(speed)
-    print()
-
-def loading():
-    clear()
-    print(f"{R}[!] INITIALIZING DEAD BODY SYSTEM...{W}")
-    # Simple loading animation
-    for i in range(5):
-        time.sleep(0.5)
-        sys.stdout.write(".")
-        sys.stdout.flush()
-    print(f"\n{G}[+] SYSTEM READY!{W}\n")
-    time.sleep(1)
-
-def show_banner(title):
+def show_banner(mode):
     clear()
     print(f"{R}{BOLD}")
     print("  ██████╗ ███████╗ █████╗ ██████╗     ██████╗  ██████╗ ██████╗ ██╗   ██╗")
@@ -42,18 +24,17 @@ def show_banner(title):
     print("  ██████╔╝███████╗██║  ██║██████╔╝    ██████╔╝╚██████╔╝██████╔╝   ██║   ")
     print("  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═════╝     ╚═════╝  ╚═════╝ ╚═════╝    ╚═╝   ")
     print(f"{G}{'='*67}")
-    print(f"  MODE: {title}")
-    print(f"{G}{'='*67}{W}\n")
+    print(f"  TOOL: DEAD-BODY-SQL-SCANNER")
+    print(f"  CREATED BY: NZ NISHAN")
+    print(f"{G}{'='*67}{W}")
+    print(f"  {Y}>> MODE: {mode}{W}\n")
 
 def run_scanner():
-    show_banner("SQL VULNERABILITY SCANNER")
     target = input(f"{Y}[?] ENTER TARGET URL: {W}")
-    
     headers = {'User-Agent': 'Mozilla/5.0'}
     payloads = ["'", '"', "';--", "UNION SELECT 1,2,3--"]
-    
+
     print(f"{B}[*] SCANNING STARTED...{W}")
-    
     found = False
     for p in payloads:
         print(f"{Y}[>] Testing: {p}{W}")
@@ -64,22 +45,23 @@ def run_scanner():
                 found = True
                 break
         except: continue
-        
     if not found:
         print(f"{R}[-] TARGET SECURE.{W}")
-    
     input(f"\n{B}Press [ENTER] to return...{W}")
 
 def main():
-    loading()
     while True:
         show_banner("MAIN TERMINAL")
-        print(f"  [01] START SCAN\n  [02] ABOUT\n  [03] EXIT")
+        print(f"{R}  [01] START SCAN")
+        print(f"{R}  [02] ABOUT")
+        print(f"{R}  [03] EXIT{W}")
         choice = input(f"\n{Y}DEAD-BODY@TERMINAL:~# {W}")
         if choice == '1': run_scanner()
         elif choice == '2':
-            print("  DEVELOPED BY: NZ NISHAN")
-            input("\nPress [ENTER]...")
+            print(f"\n{G}  TOOL NAME : DEAD-BODY-SQL-SCANNER")
+            print(f"  DEVELOPED BY: NZ NISHAN")
+            print(f"  INSTAGRAM : @boycott_nishan{W}")
+            input("\nPress [ENTER] to return...")
         elif choice == '3': sys.exit()
 
 if __name__ == "__main__":

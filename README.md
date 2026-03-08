@@ -21,6 +21,7 @@
 
 ### Step 1: Clone the repository
 git clone https://github.com/dead-body-16/DEAD-BODY-SQL-Scanner.git
+
 cd DEAD-BODY-SQL-Scanner
 
 ### Step 2: Install dependencies

@@ -18,7 +18,7 @@
 
 ## 🚀 Installation & Usage
 ```bash
-git clone [https://github.com/dead-body-16/DEAD-BODY-SQL-Scanner.git](https://github.com/dead-body-16/DEAD-BODY-SQL-Scanner.git)
+git clone https://github.com/dead-body-16/DEAD-BODY-SQL-Scanner
 cd DEAD-BODY-SQL-Scanner
 pip install requests
 python3 sql_pro.py

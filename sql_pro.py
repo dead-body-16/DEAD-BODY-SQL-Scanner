@@ -56,13 +56,13 @@ def main():
         print(f"{R}  [02] ABOUT")
         print(f"{R}  [03] EXIT{W}")
         choice = input(f"\n{Y}DEAD-BODY@TERMINAL:~# {W}")
-        if choice == '1': run_scanner()
-        elif choice == '2':
+        if choice == '01': run_scanner()
+        elif choice == '02':
             print(f"\n{G}  TOOL NAME : DEAD-BODY-SQL-SCANNER")
             print(f"  DEVELOPED BY: NZ NISHAN")
             print(f"  INSTAGRAM : @boycott_nishan{W}")
             input("\nPress [ENTER] to return...")
-        elif choice == '3': sys.exit()
+        elif choice == '03': sys.exit()
 
 if __name__ == "__main__":
     main()

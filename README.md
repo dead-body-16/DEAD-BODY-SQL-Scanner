@@ -25,3 +25,6 @@ cd DEAD-BODY-SQL-Scanner
 
 ### Step 2: Install dependencies
 pip install requests
+
+### Step 3: Run the tool
+python3 sql_pro.py

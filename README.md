@@ -28,11 +28,10 @@ cd DEAD-BODY-SQL-Scanner
 pip install requests
 python3 sql_pro.py
 
----
 
 
-'''
-## ⚠️ Disclaimer
+
+## ```⚠️ Disclaimer
 *This tool is intended for educational purposes and ethical security testing only. The user is responsible for obeying all applicable local, state, and federal laws. The author assumes no liability and is not responsible for any misuse or damage caused by this program.*
 
 ---
